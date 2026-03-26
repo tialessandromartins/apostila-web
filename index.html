@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apostila Digital: Desenvolvimento Web - SENAI AP</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="header-info">
+        <img src="SENAI_logo_2024.png" alt="Logo SENAI" class="logo-senai">
+        <p>Curso Técnico em Informática - SENAI Amapá</p>
+        <p>Unidade Curricular: Desenvolvimento Web - 2026</p>
+        <p>Instrutor: Alessandro Martins</p>
+    </div>
+
+    <h1>📖 Missão: Uilizar ID e Class no Site de Receitas</h1>
+
+    <p class="instrucao">Bem-vinda! Siga os passos abaixo para construir seu site. Marque ✅ quando terminar cada tarefa.</p>
+
+    <h2>Etapa 1: Organizando as Pastas</h2>
+    <p class="instrucao">Antes de digitar, precisamos de uma "casa" para o nosso projeto:</p>
+    <ul class="instrucao">
+        <li>Vá até a <b>Área de Trabalho</b> do seu computador.</li>
+        <li>Clique com o botão direito, escolha <b>Novo > Pasta</b>.</li>
+        <li>Coloque o nome da pasta como: <b style="color: #005594;">Meu_Site_Receitas</b></li>
+    </ul>
+    <div class="checkpoint">
+        <input type="checkbox"> <label>Criei minha pasta na Área de Trabalho ✅</label>
+    </div>
+
+    <h2>Etapa 2: O Conteúdo (HTML)</h2>
+    <p class="instrucao">Abra o VS Code, vá em <i>Arquivo > Abrir Pasta</i> e selecione a pasta que você criou. Depois, crie o arquivo <b>index.html</b> e cole o código:</p>
+    
+    <pre>
+<span class="sc-doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="sc-angle">&lt;</span><span class="sc-tag">html</span> <span class="sc-attr">lang</span>=<span class="sc-val">"pt-br"</span><span class="sc-angle">&gt;</span>
+<span class="sc-angle">&lt;</span><span class="sc-tag">head</span><span class="sc-angle">&gt;</span>
+    <span class="sc-angle">&lt;</span><span class="sc-tag">meta</span> <span class="sc-attr">charset</span>=<span class="sc-val">"UTF-8"</span><span class="sc-angle">&gt;</span>
+    <span class="sc-angle">&lt;</span><span class="sc-tag">title</span><span class="sc-angle">&gt;</span><span class="sc-text">Meu Caderno de Receitas</span><span class="sc-angle">&lt;/</span><span class="sc-tag">title</span><span class="sc-angle">&gt;</span>
+    <span class="sc-angle">&lt;</span><span class="sc-tag">link</span> <span class="sc-attr">rel</span>=<span class="sc-val">"stylesheet"</span> <span class="sc-attr">href</span>=<span class="sc-val">"style.css"</span><span class="sc-angle">&gt;</span>
+<span class="sc-angle">&lt;/</span><span class="sc-tag">head</span><span class="sc-angle">&gt;</span>
+<span class="sc-angle">&lt;</span><span class="sc-tag">body</span><span class="sc-angle">&gt;</span>
+
+    <span class="sc-angle">&lt;</span><span class="sc-tag">h1</span> <span class="sc-attr">id</span>=<span class="sc-val">"titulo-principal"</span><span class="sc-angle">&gt;</span><span class="sc-text">Culinária da Vovó Maria</span><span class="sc-angle">&lt;/</span><span class="sc-tag">h1</span><span class="sc-angle">&gt;</span>
+
+    <span class="sc-angle">&lt;</span><span class="sc-tag">div</span> <span class="sc-attr">class</span>=<span class="sc-val">"cartao-receita"</span><span class="sc-angle">&gt;</span>
+        <span class="sc-angle">&lt;</span><span class="sc-tag">h2</span><span class="sc-angle">&gt;</span><span class="sc-text">Bolo de Fubá Fofinho</span><span class="sc-angle">&lt;/</span><span class="sc-tag">h2</span><span class="sc-angle">&gt;</span>
+        
+        <span class="sc-angle">&lt;</span><span class="sc-tag">h3</span> <span class="sc-attr">class</span>=<span class="sc-val">"secao-titulo"</span><span class="sc-angle">&gt;</span><span class="sc-text">Ingredientes</span><span class="sc-angle">&lt;/</span><span class="sc-tag">h3</span><span class="sc-angle">&gt;</span>
+        <span class="sc-angle">&lt;</span><span class="sc-tag">ul</span><span class="sc-angle">&gt;</span>
+            <span class="sc-angle">&lt;</span><span class="sc-tag">li</span> <span class="sc-attr">class</span>=<span class="sc-val">"item-lista"</span><span class="sc-angle">&gt;</span><span class="sc-text">3 ovos inteiros</span><span class="sc-angle">&lt;/</span><span class="sc-tag">li</span><span class="sc-angle">&gt;</span>
+            <span class="sc-angle">&lt;</span><span class="sc-tag">li</span> <span class="sc-attr">class</span>=<span class="sc-val">"item-lista"</span><span class="sc-angle">&gt;</span><span class="sc-text">2 xícaras de fubá</span><span class="sc-angle">&lt;/</span><span class="sc-tag">li</span><span class="sc-angle">&gt;</span>
+            <span class="sc-angle">&lt;</span><span class="sc-tag">li</span> <span class="sc-attr">class</span>=<span class="sc-val">"item-lista"</span><span class="sc-angle">&gt;</span><span class="sc-text">1 colher de fermento</span><span class="sc-angle">&lt;/</span><span class="sc-tag">li</span><span class="sc-angle">&gt;</span>
+        <span class="sc-angle">&lt;/</span><span class="sc-tag">ul</span><span class="sc-angle">&gt;</span>
+
+        <span class="sc-angle">&lt;</span><span class="sc-tag">h3</span> <span class="sc-attr">class</span>=<span class="sc-val">"secao-titulo"</span><span class="sc-angle">&gt;</span><span class="sc-text">Modo de Preparo</span><span class="sc-angle">&lt;/</span><span class="sc-tag">h3</span><span class="sc-angle">&gt;</span>
+        <span class="sc-angle">&lt;</span><span class="sc-tag">p</span> <span class="sc-attr">class</span>=<span class="sc-val">"texto-instrucao"</span><span class="sc-angle">&gt;</span><span class="sc-text">Bata tudo no liquidificador, exceto o fermento. Depois, misture o fermento levemente e leve ao forno médio por 40 minutos.</span><span class="sc-angle">&lt;/</span><span class="sc-tag">p</span><span class="sc-angle">&gt;</span>
+    <span class="sc-angle">&lt;/</span><span class="sc-tag">div</span><span class="sc-angle">&gt;</span>
+
+    <span class="sc-angle">&lt;</span><span class="sc-tag">hr</span><span class="sc-angle">&gt;</span>
+    <span class="sc-angle">&lt;</span><span class="sc-tag">p</span> <span class="sc-attr">class</span>=<span class="sc-val">"rodape"</span><span class="sc-angle">&gt;</span><span class="sc-text">Criado com carinho na aula de Informática - 2026</span><span class="sc-angle">&lt;/</span><span class="sc-tag">p</span><span class="sc-angle">&gt;</span>
+
+<span class="sc-angle">&lt;/</span><span class="sc-tag">body</span><span class="sc-angle">&gt;</span>
+<span class="sc-angle">&lt;/</span><span class="sc-tag">html</span><span class="sc-angle">&gt;</span></pre>
+
+    <div class="checkpoint">
+        <input type="checkbox"> <label>Arquivo index.html salvo ✅</label>
+    </div>
+
+    <h2>Etapa 3: O Visual (CSS)</h2>
+    <p class="instrucao">Dentro da mesma pasta, crie o arquivo <b>style.css</b> e cole este código:</p>
+    
+    <pre>
+<span class="sc-tag">body</span> { <span class="sc-attr">background-color</span>: <span class="sc-val">#fff9f0</span>; }
+<span class="sc-tag">#titulo-principal</span> { <span class="sc-attr">color</span>: <span class="sc-val">#8b4513</span>; <span class="sc-attr">text-align</span>: <span class="sc-val">center</span>; }
+<span class="sc-tag">.cartao-receita</span> { 
+    <span class="sc-attr">background</span>: <span class="sc-val">white</span>; 
+    <span class="sc-attr">border</span>: <span class="sc-val">2px solid #deb887</span>; 
+    <span class="sc-attr">padding</span>: <span class="sc-val">20px</span>; 
+    <span class="sc-attr">border-radius</span>: <span class="sc-val">10px</span>; 
+}
+<span class="sc-tag">.secao-titulo</span> { <span class="sc-attr">color</span>: <span class="sc-val">#d2691e</span>; }</pre>
+
+    <div class="checkpoint">
+        <input type="checkbox"> <label>Arquivo style.css salvo ✅</label>
+    </div>
+
+    <h2>Etapa 4: Resultado Esperado</h2>
+    <p class="instrucao">Se tudo estiver correto, seu site ficará assim:</p>
+    
+    <div class="site-preview-container">
+        <div class="site-preview-browser-bar">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        </div>
+        <div class="site-preview-content">
+            <h1 id="titulo-principal-preview">Culinária da Vovó Maria</h1>
+            <div class="cartao-receita-preview">
+                <h2>Bolo de Fubá Fofinho</h2>
+                <h3 class="secao-titulo-preview">Ingredientes</h3>
+                <ul style="list-style-type: disc; margin-left: 20px;">
+                    <li>3 ovos inteiros</li>
+                    <li>2 xícaras de fubá</li>
+                    <li>1 colher de fermento</li>
+                </ul>
+                <h3 class="secao-titulo-preview">Modo de Preparo</h3>
+                <p style="color: #333;">Bata tudo no liquidificador, exceto o fermento e leve ao forno médio.</p>
+            </div>
+            <p style="text-align: center; font-style: italic; color: #999; margin-top: 15px;">Criado com carinho na aula do Curso Técnico em Informática - 2026</p>
+        </div>
+    </div>
+
+    <footer>"A tecnologia na mão de quem quer aprender transforma o mundo."</footer>
+</div>
+</body>
+</html>
