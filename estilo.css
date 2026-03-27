@@ -1,4 +1,4 @@
-/* DESIGN RESPONSIVO DA APOSTILA */
+/* ESTILO DA APOSTILA PROF. ALESSANDRO */
 body { 
     font-family: 'Segoe UI', sans-serif; 
     background-color: #f0f4f8; 
@@ -8,8 +8,8 @@ body {
 }
 
 .container { 
-    max-width: 900px; 
-    margin: auto; 
+    max-width: 950px; 
+    margin: 10px auto; 
     background: white; 
     padding: 20px; 
     border-radius: 15px; 
@@ -17,45 +17,39 @@ body {
     border-top: 8px solid #005594; 
 }
 
-/* Ajuste para telas de computador */
 @media (min-width: 768px) {
-    body { padding: 40px; }
+    body { padding: 20px; }
     .container { padding: 40px; }
 }
 
 .header-info { 
     text-align: center; 
+    margin-bottom: 30px; 
+    padding: 20px; 
     background-color: #f8fbff; 
     border-radius: 12px; 
     border: 1px solid #d0e3ff; 
-    padding: 20px; 
-    margin-bottom: 30px; 
 }
 
-.header-info p { margin: 5px 0; font-size: 14px; color: #004a8e; font-weight: bold; }
+.logo-senai { max-width: 250px; height: auto; margin-bottom: 10px; }
+.header-info p { margin: 5px 0; font-size: 16px; color: #004a8e; font-weight: bold; }
 
-h1 { color: #5d4037; text-align: center; font-size: 1.6rem; border-bottom: 4px double #ccc; padding-bottom: 10px; }
-h2 { color: #fff; background: #005594; padding: 12px; border-radius: 4px; margin-top: 30px; font-size: 1.2rem; }
+h1 { color: #5d4037; text-align: center; font-size: 1.8rem; border-bottom: 4px double #ccc; padding-bottom: 10px; }
+h2 { color: #fff; background: #005594; padding: 12px; border-radius: 4px; margin-top: 30px; }
 
 pre { 
     background-color: #1e1e1e; 
     color: #d4d4d4; 
-    padding: 15px; 
+    padding: 20px; 
     border-radius: 8px; 
     overflow-x: auto; 
     font-family: 'Consolas', monospace; 
-    font-size: 14px;
 }
 
-.sc-tag { color: #569cd6; } .sc-attr { color: #9cdcfe; } .sc-val { color: #ce9178; } .sc-text { color: #d4d4d4; }
+.sc-tag { color: #569cd6; } .sc-attr { color: #9cdcfe; } .sc-val { color: #ce9178; } .sc-text { color: #d4d4d4; } .sc-doctype, .sc-angle { color: #808080; }
 
-.preview-container { 
-    background: #fff9f0; 
-    padding: 20px; 
-    border-radius: 10px; 
-    border: 1px solid #ddd; 
-    text-align: center; 
-    margin-top: 20px; 
-}
+/* ESTILO DA ÁREA DE PREVIEW */
+.site-preview-container { border: 1px solid #ddd; border-radius: 10px; margin-top: 20px; overflow: hidden; }
+.site-preview-content { background: #fff9f0; padding: 20px; text-align: center; }
 
-footer { text-align: center; margin-top: 40px; color: #888; font-style: italic; font-size: 12px; }
+footer { margin-top: 40px; text-align: center; font-style: italic; color: #888; border-top: 1px solid #eee; padding-top: 20px; }
