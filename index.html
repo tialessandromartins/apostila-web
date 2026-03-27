@@ -10,6 +10,7 @@
 
 <div class="container">
     <div class="header-info">
+        <img src="SENAI_logo_2024.png" alt="Logo SENAI" class="logo-senai">
         <p>Curso Técnico em Informática - SENAI Amapá</p>
         <p>Unidade Curricular: Desenvolvimento Web - 2026</p>
         <p>Instrutor: Alessandro Martins</p>
@@ -17,50 +18,72 @@
 
     <h1>📖 Missão: Utilizar ID e Class no Site de Receitas</h1>
 
+    <h2>Etapa 1: Organizando as Pastas</h2>
+    <p class="instrucao">Crie uma pasta chamada <b>Meu_Site_Receitas</b> na sua Área de Trabalho.</p>
+    
+    <div class="checkpoint">
+        <input type="checkbox"> <label>Pasta criada! ✅</label>
+    </div>
+
     <h2>Etapa 2: O Conteúdo (HTML)</h2>
     <p class="instrucao">No VS Code, crie o <b>index.html</b> e cole o código abaixo:</p>
+    
     <pre>
 <span class="sc-doctype">&lt;!DOCTYPE html&gt;</span>
 <span class="sc-angle">&lt;</span><span class="sc-tag">html</span><span class="sc-angle">&gt;</span>
+<span class="sc-angle">&lt;</span><span class="sc-tag">head</span><span class="sc-angle">&gt;</span>
+    <span class="sc-angle">&lt;</span><span class="sc-tag">link</span> <span class="sc-attr">rel</span>=<span class="sc-val">"stylesheet"</span> <span class="sc-attr">href</span>=<span class="sc-val">"style.css"</span><span class="sc-angle">&gt;</span>
+<span class="sc-angle">&lt;/</span><span class="sc-tag">head</span><span class="sc-angle">&gt;</span>
 <span class="sc-angle">&lt;</span><span class="sc-tag">body</span><span class="sc-angle">&gt;</span>
-  <span class="sc-angle">&lt;</span><span class="sc-tag">h1</span> <span class="sc-attr">id</span>=<span class="sc-val">"titulo-site"</span><span class="sc-angle">&gt;</span><span class="sc-text">Culinária da Vovó Maria</span><span class="sc-angle">&lt;/</span><span class="sc-tag">h1</span><span class="sc-angle">&gt;</span>
-  <span class="sc-angle">&lt;</span><span class="sc-tag">div</span> <span class="sc-attr">class</span>=<span class="sc-val">"cartao"</span><span class="sc-angle">&gt;</span>
-    <span class="sc-angle">&lt;</span><span class="sc-tag">div</span> <span class="sc-attr">class</span>=<span class="sc-val">"topo-azul"</span><span class="sc-angle">&gt;</span><span class="sc-text">Bolo de Fubá Fofinho</span><span class="sc-angle">&lt;/</span><span class="sc-tag">div</span><span class="sc-angle">&gt;</span>
-    <span class="sc-angle">&lt;</span><span class="sc-tag">h3</span><span class="sc-angle">&gt;</span><span class="sc-text">Ingredientes</span><span class="sc-angle">&lt;/</span><span class="sc-tag">h3</span><span class="sc-angle">&gt;</span>
-    <span class="sc-angle">&lt;</span><span class="sc-tag">ul</span><span class="sc-angle">&gt;</span>
-      <span class="sc-angle">&lt;</span><span class="sc-tag">li</span><span class="sc-angle">&gt;</span><span class="sc-text">3 ovos inteiros</span><span class="sc-angle">&lt;/</span><span class="sc-tag">li</span><span class="sc-angle">&gt;</span>
-      <span class="sc-angle">&lt;</span><span class="sc-tag">li</span><span class="sc-angle">&gt;</span><span class="sc-text">2 xícaras de fubá</span><span class="sc-angle">&lt;/</span><span class="sc-tag">li</span><span class="sc-angle">&gt;</span>
-      <span class="sc-angle">&lt;</span><span class="sc-tag">li</span><span class="sc-angle">&gt;</span><span class="sc-text">1 colher de fermento</span><span class="sc-angle">&lt;/</span><span class="sc-tag">li</span><span class="sc-angle">&gt;</span>
-    <span class="sc-angle">&lt;/</span><span class="sc-tag">ul</span><span class="sc-angle">&gt;</span>
-  <span class="sc-angle">&lt;/</span><span class="sc-tag">div</span><span class="sc-angle">&gt;</span>
+    <span class="sc-angle">&lt;</span><span class="sc-tag">h1</span> <span class="sc-attr">id</span>=<span class="sc-val">"titulo-site"</span><span class="sc-angle">&gt;</span><span class="sc-text">Culinária da Vovó Maria</span><span class="sc-angle">&lt;/</span><span class="sc-tag">h1</span><span class="sc-angle">&gt;</span>
+    <span class="sc-angle">&lt;</span><span class="sc-tag">div</span> <span class="sc-attr">class</span>=<span class="sc-val">"cartao"</span><span class="sc-angle">&gt;</span>
+        <span class="sc-angle">&lt;</span><span class="sc-tag">div</span> <span class="sc-attr">class</span>=<span class="sc-val">"faixa-azul"</span><span class="sc-angle">&gt;</span><span class="sc-text">Bolo de Fubá Fofinho</span><span class="sc-angle">&lt;/</span><span class="sc-tag">div</span><span class="sc-angle">&gt;</span>
+        <span class="sc-angle">&lt;</span><span class="sc-tag">h3</span><span class="sc-angle">&gt;</span><span class="sc-text">Ingredientes</span><span class="sc-angle">&lt;/</span><span class="sc-tag">h3</span><span class="sc-angle">&gt;</span>
+        <span class="sc-angle">&lt;</span><span class="sc-tag">ul</span><span class="sc-angle">&gt;</span>
+            <span class="sc-angle">&lt;</span><span class="sc-tag">li</span><span class="sc-angle">&gt;</span><span class="sc-text">3 ovos inteiros</span><span class="sc-angle">&lt;/</span><span class="sc-tag">li</span><span class="sc-angle">&gt;</span>
+            <span class="sc-angle">&lt;</span><span class="sc-tag">li</span><span class="sc-angle">&gt;</span><span class="sc-text">2 xícaras de fubá</span><span class="sc-angle">&lt;/</span><span class="sc-tag">li</span><span class="sc-angle">&gt;</span>
+            <span class="sc-angle">&lt;</span><span class="sc-tag">li</span><span class="sc-angle">&gt;</span><span class="sc-text">1 colher de fermento</span><span class="sc-angle">&lt;/</span><span class="sc-tag">li</span><span class="sc-angle">&gt;</span>
+        <span class="sc-angle">&lt;/</span><span class="sc-tag">ul</span><span class="sc-angle">&gt;</span>
+    <span class="sc-angle">&lt;/</span><span class="sc-tag">div</span><span class="sc-angle">&gt;</span>
 <span class="sc-angle">&lt;/</span><span class="sc-tag">body</span><span class="sc-angle">&gt;</span>
 <span class="sc-angle">&lt;/</span><span class="sc-tag">html</span><span class="sc-angle">&gt;</span></pre>
 
     <h2>Etapa 3: O Visual (CSS)</h2>
+    <p class="instrucao">Crie o arquivo <b>style.css</b> e cole o código:</p>
+    
     <pre>
 <span class="sc-tag">body</span> { <span class="sc-attr">background-color</span>: <span class="sc-val">#fff9f0</span>; <span class="sc-attr">text-align</span>: <span class="sc-val">center</span>; }
-<span class="sc-tag">.cartao</span> { <span class="sc-attr">background</span>: <span class="sc-val">white</span>; <span class="sc-attr">border</span>: <span class="sc-val">1px solid #deb887</span>; <span class="sc-attr">border-radius</span>: <span class="sc-val">15px</span>; <span class="sc-attr">max-width</span>: <span class="sc-val">500px</span>; <span class="sc-attr">margin</span>: <span class="sc-val">auto</span>; }
-<span class="sc-tag">.topo-azul</span> { <span class="sc-attr">background</span>: <span class="sc-val">#335999</span>; <span class="sc-attr">color</span>: <span class="sc-val">white</span>; <span class="sc-attr">padding</span>: <span class="sc-val">15px</span>; }
+<span class="sc-tag">#titulo-site</span> { <span class="sc-attr">color</span>: <span class="sc-val">#5d4037</span>; <span class="sc-attr">border-bottom</span>: <span class="sc-val">1px solid #ddd</span>; }
+<span class="sc-tag">.cartao</span> { 
+    <span class="sc-attr">background</span>: <span class="sc-val">white</span>; <span class="sc-attr">border</span>: <span class="sc-val">1px solid #deb887</span>; 
+    <span class="sc-attr">border-radius</span>: <span class="sc-val">15px</span>; <span class="sc-attr">margin</span>: <span class="sc-val">auto</span>; <span class="sc-attr">max-width</span>: <span class="sc-val">500px</span>; 
+}
+<span class="sc-tag">.faixa-azul</span> { 
+    <span class="sc-attr">background</span>: <span class="sc-val">#335999</span>; <span class="sc-attr">color</span>: <span class="sc-val">white</span>; 
+    <span class="sc-attr">padding</span>: <span class="sc-val">15px</span>; <span class="sc-attr">border-radius</span>: <span class="sc-val">5px</span>; 
+}
 <span class="sc-tag">ul</span> { <span class="sc-attr">display</span>: <span class="sc-val">inline-block</span>; <span class="sc-attr">text-align</span>: <span class="sc-val">left</span>; }</pre>
 
     <h2>Etapa 4: Resultado Esperado</h2>
-    <div class="preview-container">
-        <h1 style="color: #5d4037;">Culinária da Vovó Maria</h1>
-        <div style="background: white; border: 1px solid #deb887; border-radius: 15px; padding: 20px; max-width: 500px; margin: auto;">
-            <div style="background: #335999; color: white; padding: 15px; border-radius: 5px; font-weight: bold; margin-bottom: 20px;">Bolo de Fubá Fofinho</div>
-            <h3 style="margin-bottom: 10px;">Ingredientes</h3>
-            <ul style="display: inline-block; text-align: left; margin: 0 auto 20px auto;">
-                <li>3 ovos inteiros</li>
-                <li>2 xícaras de fubá</li>
-                <li>1 colher de fermento</li>
-            </ul>
-            <h3>Modo de Preparo</h3>
-            <p>Bata tudo no liquidificador e leve ao forno médio.</p>
+    <div class="site-preview-container">
+        <div class="site-preview-content">
+            <h1 style="color: #5d4037; border-bottom: 1px solid #ddd; padding-bottom: 10px;">Culinária da Vovó Maria</h1>
+            <div style="background: white; border: 1px solid #deb887; border-radius: 15px; padding: 20px; max-width: 500px; margin: auto;">
+                <div style="background: #335999; color: white; padding: 15px; border-radius: 5px; font-weight: bold; margin-bottom: 20px;">Bolo de Fubá Fofinho</div>
+                <h3 style="margin-top: 10px;">Ingredientes</h3>
+                <ul style="display: inline-block; text-align: left; line-height: 2;">
+                    <li>3 ovos inteiros</li>
+                    <li>2 xícaras de fubá</li>
+                    <li>1 colher de fermento</li>
+                </ul>
+                <h3>Modo de Preparo</h3>
+                <p>Bata tudo no liquidificador e leve ao forno médio.</p>
+            </div>
+            <p style="text-align: center; font-style: italic; color: #999; margin-top: 20px;">Criado com carinho na aula de Informática - 2026</p>
         </div>
-        <p style="text-align: center; font-style: italic; color: #999; margin-top: 20px;">Criado com carinho na aula de Informática - 2026</p>
     </div>
 
-    <footer>"O código transforma o mundo."</footer>
+    <footer>"Transformando o futuro através do código."</footer>
 </div>
 </body>
 </html>
